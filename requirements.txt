@@ -1,0 +1,3 @@
+# Python test suite and validation tooling for Hydrocean Tech
+requests==2.34.2
+pytest==9.1.1

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgGrad)" rx="24"/>
+  
+  <!-- Ambient Shadow -->
+  <ellipse cx="300" cy="510" rx="180" ry="24" fill="#000000" opacity="0.12"/>
+  
+  <!-- Main Purifier Chassis -->
+  <rect x="180" y="100" width="240" height="390" rx="28" fill="url(#bodyGrad)" stroke="#cbd5e1" stroke-width="3"/>
+  
+  <!-- Digital LED Display Panel -->
+  <rect x="215" y="130" width="170" height="90" rx="14" fill="url(#screenGrad)"/>
+  <rect x="225" y="140" width="65" height="40" rx="6" fill="#0369a1" opacity="0.3"/>
+  <text x="257" y="166" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">024</text>
+  <text x="257" y="176" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="8" text-anchor="middle">PPM TDS</text>
+  
+  <circle cx="340" cy="155" r="8" fill="#22c55e"/>
+  <text x="355" y="158" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="10">PURE</text>
+  <circle cx="340" cy="175" r="5" fill="#38bdf8"/>
+  <text x="355" y="178" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="8">7-STAGE</text>
+  
+  <!-- Water Reservoir Window -->
+  <rect x="220" y="240" width="160" height="190" rx="18" fill="url(#waterGrad)" stroke="#bae6fd" stroke-width="2"/>
+  
+  <!-- Water Level Waves -->
+  <path d="M 220 280 Q 260 270, 300 280 T 380 280 L 380 430 L 220 430 Z" fill="#0284c7" opacity="0.6"/>
+  <circle cx="260" cy="340" r="12" fill="#ffffff" opacity="0.25"/>
+  <circle cx="330" cy="380" r="18" fill="#ffffff" opacity="0.2"/>
+  <circle cx="290" cy="310" r="8" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Water Level Indicators -->
+  <line x1="365" y1="260" x2="375" y2="260" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+  <line x1="365" y1="300" x2="375" y2="300" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+  <line x1="365" y1="340" x2="375" y2="340" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+  <text x="355" y="264" fill="#ffffff" font-family="sans-serif" font-size="10" text-anchor="end" opacity="0.8">10L</text>
+  
+  <!-- Dispenser Faucet Spout -->
+  <rect x="285" y="435" width="30" height="25" rx="6" fill="#94a3b8"/>
+  <path d="M 292 460 L 292 475 Q 292 485 300 485 Q 308 485 308 475 L 308 460 Z" fill="#64748b"/>
+  <circle cx="300" cy="495" r="4" fill="#38bdf8"/>
+  
+  <!-- Brand Plate -->
+  <text x="300" y="232" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="12" font-weight="900" letter-spacing="2" text-anchor="middle">HYDROCEAN</text>
+</svg>
